@@ -5,6 +5,9 @@ package axi_lite_pkg;
         AXI_WRITE
     } axi_operation_t;
 
+    typedef axi_lite_sequence axi_lite_sequence;
+    typedef axi_lite_sequencer axi_lite_sequencer;
+
     class axi_lite_transaction;
 
         rand axi_operation_t operation;
