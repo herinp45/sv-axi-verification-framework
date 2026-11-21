@@ -5,7 +5,7 @@ module compile_smoke;
 
     always #5 clk = ~clk;
     initial begin
-        axi_pkg::axi_lite_transaction trans = new();
+        axi_lite_pkg::axi_lite_transaction trans = new();
         if (trans.randomize()) begin
             trans.display();
         end
